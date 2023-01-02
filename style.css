@@ -1,0 +1,81 @@
+/* police */
+@import url("https://fonts.googleapis.com/css2?family=Emblema+One&display=swap");
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Mise en page*/
+
+body {
+  background-color: rgb(165, 163, 163);
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+img {
+  opacity: 0.4;
+  width: 100%;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  width: 100%;
+  height: 100%;
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-family: "Emblema One", cursive;
+
+  font-size: 5em;
+  font-weight: bold;
+}
+h2,
+.title {
+  font-size: 2em;
+}
+
+/* section */
+section div {
+  display: flex;
+  justify-content: space-around;
+  height: 650px;
+}
+
+/* footer */
+
+footer,
+section {
+  justify-content: space-around;
+  display: flex;
+}
+.title,
+.professional_experience {
+  align-items: center;
+  width: 33%;
+}
