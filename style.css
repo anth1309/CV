@@ -8,7 +8,7 @@ a {
   color: #eee;
 }
 a:hover {
-  font-size: 3em;
+  font-size: 2em;
 }
 html {
   box-sizing: border-box;
@@ -33,7 +33,7 @@ body {
 
 img {
   opacity: 0.4;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -44,6 +44,11 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+li :first-child,
+span {
+  font-weight: bold;
 }
 
 /* header */
@@ -67,6 +72,12 @@ h2,
   font-size: 2em;
 }
 
+.professional_experience,
+.formation,
+.profilProfessionnel,
+li a {
+  color: #eee;
+}
 /* Section Acceuil  Footer*/
 
 #profilTitle,
@@ -79,27 +90,11 @@ h2,
 #profilTitle,
 #professionnalTitle,
 #formationTitle,
-.footerTitle,
-ul {
+.footerTitle {
   align-items: center;
   width: 33.3%;
 }
-.professional_experience {
-  color: #eee;
-  font-size: 1.5em;
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  background-color: #333;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  visibility: hidden;
-}
-.visible {
-  visibility: visible;
-}
+
 footer,
 section {
   display: flex;
@@ -107,28 +102,60 @@ section {
 
 /* Section Professionnal experience */
 
-.professional_experience {
-  display: flex;
-  flex-direction: column;
-}
-
 .professionnal {
+  width: 95%;
   display: flex;
   justify-content: space-around;
 }
 
-/* span {
-  size: 1.5em;
-  font-weight: bold;
+.professional_experience,
+.formation,
+.profilProfessionnel {
+  color: #eee;
+  font-size: 1.5em;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  background-color: rgb(62, 60, 60);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
 }
-li {
-  padding: 10px;
-} */
+.formation,
+.profilProfessionnel {
+  align-items: center;
+}
 
-/* footer */
+.visible {
+  visibility: visible;
+}
 
-/* .title,
-{
+ul {
+  width: 33.3%;
   display: flex;
   flex-direction: column;
-} */
+  text-align: left;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* section profil professionnel */
+
+.formation > .professionnal {
+  display: flex;
+  text-align: left;
+  width: 50%;
+}
+li img {
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  width: 70px;
+  height: 70px;
+}
