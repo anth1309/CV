@@ -30,12 +30,22 @@ body {
   position: relative;
   text-align: center;
 }
-
-img {
+/* .container > img {
+  background-repeat: repeat;
   opacity: 0.4;
   width: 100vw;
   height: 100vh;
-}
+} */
+/* .container > #image {
+  background-image: url("./photo/fond.webp");
+  background-repeat: repeat;
+  min-height: 2000px;
+  height: 100%;
+} */
+/* 
+img {
+  
+} */
 
 .page {
   position: absolute;
@@ -100,7 +110,7 @@ section {
   display: flex;
 }
 
-/* Section Professionnal experience */
+/* Section */
 
 .professionnal {
   width: 95%;
@@ -122,7 +132,9 @@ section {
   width: 100%;
   height: 100%;
   visibility: hidden;
+  overflow-y: scroll;
 }
+
 .formation,
 .profilProfessionnel {
   align-items: center;
@@ -152,10 +164,31 @@ li {
   text-align: left;
   width: 50%;
 }
+
 li img {
   display: flex;
   flex-direction: row;
   opacity: 1;
   width: 70px;
   height: 70px;
+}
+/* media queries */
+
+@media screen and (max-width: 1400px) {
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .professional_experience,
+  .formation,
+  .profilProfessionnel {
+    display: flex;
+    flex-direction: column;
+  }
+  .professionnal {
+    display: flex;
+    flex-direction: column;
+  }
 }
